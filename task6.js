@@ -9,17 +9,17 @@
 // Найдите разность между суммой квадратов и квадратом суммы первых ста натуральных чисел.
 
 const difference = (countOfNumbers) => {
-    let sumOfSquares = 0;
-    let squareOfSum = 0;
-    let justSum = 0
-    for (let i = 1; i <= countOfNumbers; i++) {
-        sumOfSquares += i**2;
-    };
-    for (let i = 1; i <= countOfNumbers; i++) {
-        justSum += i;
-    }
-    squareOfSum = justSum**2
-    return squareOfSum - sumOfSquares
-}
+	let sumOfSquares = 0;
+	let squareOfSum = 0;
+	let justSum = 0;
+	for (let i = 1; i <= countOfNumbers; i++) {
+		sumOfSquares += i ** 2;
+	}
+	for (let i = 1; i <= countOfNumbers; i++) {
+		justSum += i;
+	}
+	squareOfSum = justSum ** 2;
+	return squareOfSum - sumOfSquares;
+};
 
-console.log(difference(100))
+console.log(difference(100));
